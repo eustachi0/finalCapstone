@@ -1,0 +1,57 @@
+/* adds vertical spacce between items of the form */
+.v-spacing {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* input and select dropdown fields */
+input, select {
+    position: absolute;
+    left: 90px;
+}
+
+/* reviews style */
+.quote {
+    font-style: italic;
+}
+.quote::before {
+    content: open-quote;
+}
+.quote::after {
+    content: close-quote;
+}
+
+/* li elements */
+li {
+    margin-left: -15px;
+}
+
+/* position buttons */
+.flex {
+    display: flex;
+    gap: 7px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* position descriptions when no editing */
+.text-description {
+    position: absolute;
+    left: 95px;
+}
+
+/* input/select fields inside span */
+span input, span select {
+    position: absolute;
+    left: 95px;
+}
+
+/* hide input fields */
+.hide-input {
+    visibility: hidden;
+}
+
+/* show input fields when editButton is clicked */
+.show-input {
+    visibility: visible;
+}
