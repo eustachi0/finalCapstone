@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<!-- head and title -->
+<head>
+    <title>3D Modelling</title>
+    <link rel="stylesheet" href="../style/myStyleT29.css">
+    <!-- task 42 adding icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<!-- TASK 42
+I have updated the path to all local images to relative path
+-->
+
+<body onload="load()">
+    <!-- the header here to add a title -->
+    <header>
+        <!-- a block here to structure my hero image including the navegation bar and a title -->
+        <div id="hero">
+            <!-- image 1
+            will cover the whole hero section, I could have use here css background-image property too-->
+            <!-- task 42, I'm wrapping the image within a div to be able to get the sibling element when clicking on the button below this div-->
+            <div class="image-hero">
+                <img src="../media/robot-helmet-3d-rendered-robotic-600w-187027727.webp" alt="a shutterstock reference image">
+            </div>
+
+            <!-- task 42 - added a save for later button -->
+            <div class="button-center-hero">
+                <button id="button1" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                <div class="button-right-hero">
+                    <form>
+                        <button id="like-button1" type="button" class="like-button no-liked">Like &#128077;</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- task 42  like form-->
+
+            <nav>
+                <a href="../pages/index.html">Home</a>
+                <a href="../pages/houdini.html">Houdini</a>
+                <a href="../pages/rendering.html">Rendering</a>
+                <a class="saved-list" href="../pages/saved-items.html"><span><i class="material-icons">&#xe2c8;</i></span>My folder <span id="counter">0 saved</span></a>
+            </nav>
+            <div class="page-title">
+                <h1>3D Modelling</h1>
+                <p class="hero-subtitle">A hobby that has turned into my job</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <!-- block 1 - Defining what 3D modelling is -->
+    <div class="container">
+        <!-- first section for the content -->
+        <section>
+            <h2>What is 3D Modelling?</h2>
+            <p>In 3D computer graphics, 3D modeling is the process of developing a mathematical coordinate-based representation of any surface of an object (inanimate or living) in three dimensions via specialized software by manipulating edges, vertices, and polygons in a simulated 3D space.</p>
+            <br>
+            <!-- source-text class will control the size of the text when I mention the source
+            external link 1 - wikipedia
+            -->
+            <p class="source-text">Source: <a href="https://en.wikipedia.org/wiki/3D_modeling"> Wikipedia</a></p>
+            <p>The artist starts by generating a 3D primitive such as a plane, cube, cylinder or sphere, which are each made up of numerous polygons. This object is then further developed by using various modelling tools to change and define its new, desired form. The workflow involves adding vertexes, while adjusting their placement and manipulating the object’s mesh by subdividing its polygons with the goal of creating a new 3D object.</p>
+            <br>
+            <!-- source-text class will control the size of the text when I mention the source
+            external link 1 - wikipedia
+            -->
+            <p class="source-text">Source: <a href="https://www.autodesk.co.uk/solutions/3d-modeling-software"> Autodesk</a></p>
+            <!-- image 2 -->
+            <figure>
+                <img class="feature-image" src="../media/stock-photo-valve-charts-with-d-model-on-top-70012366.jpg" alt="a shutterstock reference image">
+                <figcaption>A 3D model of a mechanical piece and all its 2D faces. Image source: Shutterstock</figcaption>
+            </figure>
+            <!-- task 42 - added a save for later button -->
+            <div class="button-center">
+                <button id="button2" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                <div>
+                    <form>
+                        <button id="like-button2" type="button" class="like-button no-liked">Like &#128077;</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- task 42 - added a save for later button -->
+        <div>
+            <button id="button3" class="save" type="button" onclick="saveForLater(this)">Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button3" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- block 2 -->
+    <div class="container">
+        <!-- second section for the content -->
+        <section>
+            <h2>The 3D Coordinate System</h2>
+            <p>The 3D coordinate system allows us to represent a quantity in a space that contains three mutually perpendicular axes. Through the 3D coordinate system, we can now visualize points and surfaces with respect to three axes.</p>
+            <br>
+            <!-- source-text class will control the size of the text when I mention the source
+            external link 1 - wikipedia
+            -->
+            <p class="source-text">Source: <a href="https://www.storyofmathematics.com/3d-coordinate-system/"> The Story of Mathematics</a></p>
+            <!-- image 3 -->
+            <figure>
+                <img class="feature-image" src="../media/Coord_planes_color.svg.png" alt="a wkipedia picture of 3d coordinate">
+                <figcaption>The coordinates system. Image source <a href="https://en.wikipedia.org/wiki/Three-dimensional_space">Wikipedia</a> </figcaption>
+            </figure>
+            <!-- task 42 - added a save for later button -->
+            <div class="button-center">
+                <button id="button4" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                <div>
+                    <form>
+                        <button id="like-button4" type="button" class="like-button no-liked">Like &#128077;</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- task 42 - added a save for later button -->
+        <div>
+            <button id="button5" class="save" type="button" onclick="saveForLater(this)" >Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button5" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- block - 3 Here I wrote about the coordinates in 3D-->
+    <div class="container">
+        <!-- third section for the content -->
+        <section>
+            <h2>Coordinates in 3D</h2>
+            <!-- class references will have a diferente font size and style -->
+            <p>The most basic visual entity in the 3D space is the <span class="references">point</span>. The point has no size, but it does have a location. To determine the location of a point, first establish an arbitrary point in space as the origin.</p><br>
+            <p class="references">X, Y, and Z Axes</p>
+            <!-- unordered list 1 -->
+            <p>We can say a point's location is:
+                <ul class="highligths gray-background rounded">
+                    <li>
+                        A number of units along the X axis
+                    </li>
+                    <li>
+                        A number of units along the Y axis
+                    </li>
+                    <li>
+                        A number of units along the Z axis
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p class="source-text">Source: <a href="https://docs.iconics.com/V10.97/GENESIS64/Help/Apps/GWX/GW_3D/Coordinates_in3D.htm"> Iconics</a></p>
+            <p class="align-center">An example of a 3D coordinates data to draw a cube in 3D</p>
+            <!-- table 1 -->
+            <div class="align-center">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Axis X</th>
+                        <th>Axis Y</th>
+                        <th>Axis Z</th>
+                    </tr>
+                    <tr>
+                        <td>Point A</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Point B</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Point C</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Point D</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Point E</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Point F</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Point G</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Point H</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <p class="align-center">A graphic representation of the data above will look like this:</p>
+            <!-- image 4 -->
+            <figure>
+                <img class="feature-image align-center" src="../media/Cube-ABCD-EFGH-on-3D-coordinate-axis-with-a-length-of-the-edge-in-4-units.png" alt="3D Coordinate Axis">
+                <figcaption>Cube ABCD EFGH on 3D coordinate axis with a length of the edge in 4 units. Source: <a href="https://www.researchgate.net/figure/Cube-ABCD-EFGH-on-3D-coordinate-axis-with-a-length-of-the-edge-in-4-units_fig1_323231999">ResearchGate</a></figcaption>
+            </figure>
+            <!-- task 42 - added a save for later button -->
+            <div class="button-center">
+                <button id="button6" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                <div>
+                    <form>
+                        <button id="like-button6" type="button" class="like-button no-liked">Like &#128077;</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- task 42 - added a save for later button -->
+        <div>
+            <button id="button7" class="save" type="button" onclick="saveForLater(this)">Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button7" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <!-- separator line -->
+        <div class="separator"></div>
+
+    <!-- block 4 - the grid of 4 tiles to show what is 3d modelling used for-->
+    <div class="container">
+        <!-- fourth section for the content -->
+        <section>
+            <h2>What is 3D Modelling used for?</h2>
+            <p>3D modelling is used across a wide range of industries</p>
+            <div class="grid-tiles gray-background rounded">
+                <!-- tile 1 -->
+                <div class="tiles">
+                    <figure>
+                        <img class="image-tile" src="https://damassets.autodesk.net/content/dam/autodesk/images/solutions/3d-modeling-software/cropped-1595264229.png" alt="film and tv">
+                        <figcaption>
+                            <h3>Film & TV</h3>
+                            <p>
+                                VFX and animation studios use modelling software to create CG assets and characters for films and TV shows.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- task 42 - added a save for later button -->
+                    <div class="button-center">
+                        <button id="button8" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                        <div>
+                            <form>
+                                <button id="like-button8" type="button" class="like-button no-liked">Like &#128077;</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- tile 2 -->
+                    <figure>
+                        <img class="image-tile" src="https://damassets.autodesk.net/content/dam/autodesk/images/solutions/3d-modeling-software/cropped-1595264164.png" alt="game development">
+                        <figcaption>
+                            <h3>Game Development</h3>
+                            <p>
+                                Game developers create 3D environments and characters for games and cinematics using modelling tools.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- task 42 - added a save for later button -->
+                    <div class="button-center">
+                        <button id="button9" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                        <div>
+                            <form>
+                                <button id="like-button9" type="button" class="like-button no-liked">Like &#128077;</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- tile 3 -->
+                <div class="tiles">
+                    <figure>
+                        <img class="image-tile" src="https://damassets.autodesk.net/content/dam/autodesk/images/solutions/3d-modeling-software/cropped-1595264280.png" alt="product design">
+                        <figcaption>
+                            <h3>Product Design</h3>
+                            <p>
+                                The manufacturing industry uses 3D modelling software for product design, engineering and concept rendering.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- task 42 - added a save for later button -->
+                    <div class="button-center">
+                        <button id="button10" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                        <div>
+                            <form>
+                                <button id="like-button10" type="button" class="like-button no-liked">Like &#128077;</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    
+                    <!-- tile 4 -->
+                    <figure>
+                        <img class="image-tile" src="https://damassets.autodesk.net/content/dam/autodesk/images/solutions/3d-modeling-software/cropped-1595266600.png" alt="Architecture">
+                        <figcaption>
+                            <h3>Architecture</h3>
+                            <p>
+                                The architecture industry uses modelling software to render interiors and exteriors of proposed buildings and environments.
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                    <!-- task 42 - added a save for later button -->
+                    <div class="button-center">
+                        <button id="button11" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                        <div>
+                            <form>
+                                <button id="like-button11" type="button" class="like-button no-liked">Like &#128077;</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <p class="source-text">Source: <a href="https://www.autodesk.co.uk/solutions/3d-modeling-software"> Autodesk</a></p>
+        </section>
+
+        <!-- task 42 - added a save for later button -->
+        <div>
+            <button id="button12" class="save" type="button" onclick="saveForLater(this)" >Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button12" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- block 5 - a list of 3D tools I used-->
+    <div class="container">
+        <!-- fifth section for the content -->
+        <section>
+            <h2>3D Modelling software I use:</h2>
+            <p>
+                <ul>
+                    <li>
+                        SideFX Houdini
+                    </li>
+                    <li>
+                        Autodesk Maya
+                    </li>
+                    <li>
+                        Blender
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <!-- task 42 - added a save for later button -->
+        <div>
+            <button id="button13" class="save" type="button" onclick="saveForLater(this)" >Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button13" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- quote -->
+    <div class="align-center">
+        <figure>
+            <blockquote cite="https://www.gsc-3d.com/blog/9-design-inspiration-quotes-to-help-inspire-innovation/">
+                <p>I do not fear computers. I fear the lack of them</p>
+            </blockquote>
+            <figcaption>—Issac Asimov, <cite>GSC</cite></figcaption>
+        </figure>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- T42 adding a leave comments form -->
+    <div class="container">
+        <div class="flex">
+            <div>
+                <h3>Leave a comment:</h3>
+                <br>
+                <form>
+                    <label for="comment">Write your comment:</label><br>
+                    <input type="text" name="comment" id="comment">
+                    <br><br>
+                    <button id="button-comment" type="button">Submit</button>
+                    <p id="message-val"></p>
+                </form>
+            </div>
+            <div id="latest-comment" class="comment-block">
+                <h4>Latest comment:</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- T42 adding a leave comments form -->
+    <div class="container">
+        <div>
+            <h3>Contact Me:</h3>
+            <br>
+            <form>
+                <label for="yName">Your Name:</label><br>
+                <input type="text" name="yName" id="yName"><br>
+                <label for="ySurname">Your Surname:</label><br>
+                <input type="text" name="ySurname" id="ySurname"><br>
+                <label for="email">Your email:</label><br>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <div>
+                    <button onclick="contactForm()" id="button-contact" type="button">Submit</button>
+                    <p id="contact-val"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!--A submit button form -->
+    <div class="container">
+        <h3>What 3D modelling software do you use?</h3>
+
+        <!-- <p>If you would like to participate in this survey, please feel free to fill the form</p> -->
+        <form>
+            <div>
+                <!-- radio buttons -->
+                <fieldset>
+                    <legend>Select the 3D Software you use:</legend>
+                    <!-- options -->
+                    <!-- option 1 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="maya" checked>
+                        <label for="software">Autodesk Maya</label>
+                    </div>
+                    <!-- option 2 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="houdini">
+                        <label for="software">SideFX Houdini</label>
+                    </div>
+                    <!-- option 3 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="max">
+                        <label for="software">Autodesk 3ds Max</label>
+                    </div>
+                    <!-- option 4 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="blender">
+                        <label for="software">Blender</label>
+                    </div>
+                    <!-- option 5 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="cinema4d">
+                        <label for="software">Maxon Cinema 4D</label>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- submit button -->
+            <div>
+                <button onclick="surveyForm()" id="survey-button" type="button">Submit</button>
+                <p id="survey-val"></p>
+            </div>
+        </form>
+    </div>
+
+<footer>
+    <p>
+        Eustachio Di Paola. Dec, 2022 - HyperionDev Bootcamp - Task 29 & Task 42
+    </p>
+</footer>
+
+<!-- added script for task 42 -->
+<script type='text/javascript' src='../js/main.js'></script>
+
+</body>
+
+</html>

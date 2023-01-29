@@ -1,0 +1,340 @@
+/* main elements of the page */
+body {
+    width: 100%;
+    margin: auto;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #8aa096;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* main hero area, I am displaying an image here, the nav bar, the a page title and subtitle*/
+#hero {
+    width: 100%;
+}
+.hero-subtitle {
+    margin-top: -35px;
+}
+
+
+/* the header is inside the the main hero area containing the nav bar */
+header {
+    height: 400px;
+    position: relative;
+}
+
+/* the nav bar of the page */
+nav {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color:rgb(255, 170, 170);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* this will control the main page title of the page, it will appear centered on top the hero image
+I got help from this site https://www.w3schools.com/howto/howto_css_center-vertical.asp
+*/
+.page-title {
+    color: white;
+    /* align vertically centered */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* a container class to give the content a different width from the body, as body is full-width because I wanted the hero area to be full width */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* class to tiled the content for What is 3D modelling used for */
+.grid-tiles {
+    display: flex;
+}
+.tiles {
+    width: 50%;
+}
+.tiles figure {
+    margin-top: 20px;
+}
+.tiles figcaption {
+    margin-top: -20px;
+    padding-bottom: 0px;
+}
+.tiles figcaption p {
+    margin-top: -15px;
+}
+
+/* T29 - requirements
+At least 5 images.
+classes for images
+*/
+.image-hero img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.image-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+/* for the images of the tiles at the end of the homepage */
+.image-tile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* images for feature an aspect related to the content */
+.feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+figcaption {
+    text-align: center;
+}
+
+
+/* T29 - requirements
+At least 3 font sizes (to help differentiate sections).
+*/
+.source-text {
+    font-size: 10px;
+    font-style: italic;
+    text-align: right;
+    margin-top: -30px;
+}
+.references {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;
+    color: blueviolet;
+}
+.highligths {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 800;
+    color: teal;
+}
+
+/* styling the table  */
+table {
+    width: 70%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid gray;
+}
+
+/* some utility classes here to change background colours, move elements up or down, add rounded corners etc. */
+
+.gray-background {
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.rounded {
+    border-radius: 10px;
+}
+.align-center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* this class adds a line between sections 
+*/
+.separator {
+    height: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 40px;
+}
+
+/* T42 padding top class added*/
+.padding-top {
+    padding-top: 25px;
+}
+
+/* this class adds a line between added saved itemes sections 
+updated for task 42
+*/
+.separator2 {
+    width: 125%;
+    margin-left: -12.5%;
+    height: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 40px;
+}
+
+/* some styling to the form */
+input {
+    margin: 5px;
+}
+fieldset {
+    margin: 10px -10px 10px -10px;
+}
+fieldset legend {
+    font-size: 20px;
+    margin-left: -5px;
+}
+
+/* style for the saved list menu 
+task 42
+*/
+.saved-list {
+    position: fixed;
+    margin-right: -33%;
+    margin-left: 40%;
+    background-color: blueviolet;
+    border-radius: 5px;
+    width: 25%;
+    font-size: 1.8vw;
+    text-align: center;
+    z-index: 10;
+}
+
+/* saved items divs */
+#saved-items img{
+    width: 100%;
+}
+/* hide buttons on the saved articles */
+#saved-items button{
+    display: none;
+}
+
+/* center buttons */
+.button-center {
+    width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.button-right-hero {
+    width: 100%;
+    text-align: right;
+    margin-top: -24px;
+    margin-bottom: 20px;
+    margin-left: 73px;
+}
+
+.button-center-hero {
+    margin: 0;
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* style for the number of item saved on the nav menu 
+task 42
+*/
+#counter {
+    color: rgb(48, 248, 255);
+}
+
+/* task 42 like button */
+.no-liked {
+    filter: grayscale(1);
+    font-size: 16px;
+    width: 90px;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    text-align: left;
+    background-color: rgb(232, 232, 232);
+    color: black;
+    border: 2px solid black;
+}
+
+.liked {
+    font-size: 16px;
+    width: 90px;
+    border-radius: 10px;
+    padding-bottom: 3px;
+    padding-left: 13px;
+    text-align: left;
+    background-color: blueviolet;
+    color: pink;
+    border: 2px solid black;
+}
+
+/* added T42 */
+.flex {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+/* lates comment block */
+.comment-block {
+    width: 100%;
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+.comment-text {
+    width: 100%;
+}
+
+/* footer style */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: lightgrey;
+    margin-top: 30px;
+}
+
+footer p {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+
+/* media queries */
+/* here, the table will show the atomic number, the symbol, the name and the chemical group for each element*/
+@media screen and (max-width: 1400px) {
+
+}
+
+/* here, the table will show the atomic number, the symbol and the name for each element*/
+@media screen and (max-width: 998px) {
+
+}
+
+/* here, the table will dissapear and an image will replace the table */
+@media screen and (max-width: 570px) {
+    #table {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+    }
+    header {
+        display: none;
+    }
+}

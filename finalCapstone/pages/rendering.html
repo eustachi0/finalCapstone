@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+
+<!-- head and title -->
+<head>
+    <title>Redshift Rendering</title>
+    <link rel="stylesheet" href="../style/myStyleT29.css">
+    <!-- task 42 adding icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body onload="load()">
+    <!-- the header here to add a title -->
+    <header>
+        <!-- a block here to structure my hero image including the navegation bar and a title -->
+        <div id="hero">
+            <!-- image 1 will cover the whole hero section, I could have use here css background-image property too-->
+            <!-- task 42, I'm wrapping the image within a div to be able to get the sibling element when clicking on the button below this div-->
+            <div class="image-hero">
+                <img src="https://maxonassets.imgix.net/images/Redshift_hero_2023.jpg?auto=compress%2Cformat&fit=clip&fm=webp&q=80&w=1320&s=12d306cde3cf6e5dc9e61e927b49a2ec" alt="maxon redshift image link">
+            </div>
+
+            <!-- task 42 - added a save for later button -->
+            <div class="button-center-hero">
+                <button id="button16" class="save" type="button" onclick="saveForLater(this)" >Save image for later</button>
+                <div class="button-right-hero">
+                    <form>
+                        <button id="like-button16" id="like-button14" type="button" class="like-button no-liked">Like &#128077;</button>
+                    </form>
+                </div>
+            </div>
+
+            <nav>
+                <a href="../pages/index.html">Home</a>
+                <a href="../pages/houdini.html">Houdini</a>
+                <a href="../pages/rendering.html">Rendering</a>
+                <a class="saved-list" href="../pages/saved-items.html"><span><i class="material-icons">&#xe2c8;</i></span>My folder <span id="counter">0 saved</span></a>
+            </nav>
+            <div class="page-title">
+                <h1>Redshift</h1>
+                <p class="hero-subtitle">The world's first fully GPU-accelerated, biased renderer.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- content -->
+    <!-- block 1 - Defining what 3D modelling is -->
+    <div class="container">
+        <!-- first section for the content -->
+        <section>
+            <h2>What is Redshift?</h2>
+            <p>Redshift is a powerful GPU-accelerated renderer, built to meet the specific demands of contemporary high-end production rendering. Tailored to support creative individuals and studios of every size, Redshift offers a suite of powerful features and integrates with industry standard CG applications.</p>
+            <!-- a link to go to the official website of Redshift -->
+            <a href="https://www.maxon.net/en/redshift">Go to the Maxon Redshift Official website</a>
+            <!-- source-text class will control the size of the text when I mention the source
+            external link 1 - wikipedia
+            -->
+            <p class="source-text">Source: <a href="https://www.maxon.net/en/redshift"> Maxon Redshift Official Website</a></p>
+        </section>
+
+        <!-- task 42 - added a save for later button -->
+        <div class="padding-top">
+            <button id="button17" class="save" type="button" onclick="saveForLater(this)" >Save article for later</button>
+            <div>
+                <form>
+                    <button id="like-button17" id="like-button14" type="button" class="like-button no-liked">Like &#128077;</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- T42 adding a leave comments form -->
+    <div class="container">
+        <div class="flex">
+            <div>
+                <h3>Leave a comment:</h3>
+                <br>
+                <form>
+                    <label for="comment">Write your comment:</label><br>
+                    <input type="text" name="comment" id="comment">
+                    <br><br>
+                    <button id="button-comment" type="button">Submit</button>
+                    <p id="message-val"></p>
+                </form>
+            </div>
+            <div id="latest-comment" class="comment-block">
+                <h4>Latest comment:</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!-- T42 adding a leave comments form -->
+    <div class="container">
+        <div>
+            <h3>Contact Me:</h3>
+            <br>
+            <form>
+                <label for="yName">Your Name:</label><br>
+                <input type="text" name="yName" id="yName"><br>
+                <label for="ySurname">Your Surname:</label><br>
+                <input type="text" name="ySurname" id="ySurname"><br>
+                <label for="email">Your email:</label><br>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <div>
+                    <button onclick="contactForm()" id="button-contact" type="button">Submit</button>
+                    <p id="contact-val"></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- separator line -->
+    <div class="separator"></div>
+
+    <!--A submit button form -->
+    <div class="container">
+        <h3>What 3D modelling software do you use?</h3>
+
+        <!-- <p>If you would like to participate in this survey, please feel free to fill the form</p> -->
+        <form>
+            <!-- radio buttons -->
+            <div>
+                <fieldset>
+                    <legend>Select the 3D Software you use:</legend>
+                    <!-- options -->
+                    <!-- option 1 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="maya" checked>
+                        <label for="software">Autodesk Maya</label>
+                    </div>
+                    <!-- option 2 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="houdini">
+                        <label for="software">SideFX Houdini</label>
+                    </div>
+                    <!-- option 3 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="max">
+                        <label for="software">Autodesk 3ds Max</label>
+                    </div>
+                    <!-- option 4 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="blender">
+                        <label for="software">Blender</label>
+                    </div>
+                    <!-- option 5 -->
+                    <div>
+                        <input type="radio" id="software" name="software" value="cinema4d">
+                        <label for="software">Maxon Cinema 4D</label>
+                    </div>
+                </fieldset>
+            </div>
+            <!-- submit button -->
+            <div>
+                <button onclick="surveyForm()" id="survey-button" type="button">Submit</button>
+                <p id="survey-val"></p>
+            </div>
+        </form>
+    </div>
+
+<footer>
+    <p>
+        Eustachio Di Paola. Jan, 2023 - HyperionDev Bootcamp - Task 29 & Task 42
+    </p>
+</footer>
+
+<!-- added script for task 42 -->
+<script type='text/javascript' src='../js/main.js'></script>
+
+</body>
+
+</html>
