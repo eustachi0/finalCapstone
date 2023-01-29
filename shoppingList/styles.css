@@ -1,0 +1,25 @@
+/* li */
+li {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+/* checked list items */
+.checked {
+    color: lightgray;
+    text-decoration: line-through;
+}
+
+/* x to delete items */
+.close {
+    color: grey;
+    position: absolute;
+    width: 18px;
+    left: 200px;
+    background-color: lightgray;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
