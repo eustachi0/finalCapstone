@@ -17,6 +17,7 @@ This web app allows users to save articles and images in a folder, users can als
 
 ## Installation
 Some text here
+Some more text here
 
 ----
 
