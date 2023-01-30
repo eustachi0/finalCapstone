@@ -28,7 +28,7 @@ This web app does not use session storage or local storage, changes will dissape
 - Add a book by filling the form accordingly and press the "Add a book you like".
 - Books added will appear under the List of Books
 
-    ![screenshot](bookstore/misc/bs-screenshot02.jpeg)
+    ![screenshot](bookstore/misc/bs-screenshot03.jpeg)
 
 - You can edit books by clicking on the "Edit" button, when editing press "Save" button to save changes.
 
