@@ -21,14 +21,14 @@ This web app does not use session storage or local storage, changes will dissape
 2. Go to the folder and execute the index1.html file by double clicking on it.
 3. The website should open on your browser.
 
-    ![screenshot](bookStore/misc/bs-screenshot01.jpeg)
+    ![screenshot](./bookStore/misc/bs-screenshot01.jpeg)
 ----
 
 ## How to use
 - Add a book by filling the form accordingly and press the "Add a book you like".
 - Books added will appear under the List of Books
 
-    ![screenshot](bookstore/misc/bs-screenshot03.jpeg)
+    ![screenshot](./bookstore/misc/bs-screenshot03.jpeg)
 
 - You can edit books by clicking on the "Edit" button, when editing press "Save" button to save changes.
 
