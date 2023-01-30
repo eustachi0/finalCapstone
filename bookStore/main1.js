@@ -133,7 +133,7 @@ function load() {
             let saveButton = document.createElement("button");
             saveButton.innerHTML = "Save";
             saveButton.type = "submit";
-            saveButton.style.display = "block";
+            saveButton.style.display = "none";
 
             // adding eventlistener to call saveBook function
             saveButton.addEventListener("click", function(e) {
