@@ -21,7 +21,7 @@ This web app does not use session storage or local storage, changes will dissape
 2. Go to the folder and execute the index1.html file by double clicking on it.
 3. The website should open on your browser.
 
-    ![screenshot](bookStore/misc/bs-screenshot01.jpeg)
+    ![screenshot](https://github.com/eustachi0/finalCapstone/blob/bookStore/bookStore/misc/bs-screenshot01.jpeg)
 ----
 
 ## How to use
